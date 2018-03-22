@@ -1,0 +1,7 @@
+echo Creating release file structure
+mkdir -p GameData/VABReorienter
+cp ../files/changelog.txt GameData/VABReorienter
+cp ../LICENSE GameData/VABReorienter
+cp ../README.md GameData/VABReorienter
+cp ../src/bin/Release/VABReorienter.dll GameData/VABReorienter
+echo Done.
