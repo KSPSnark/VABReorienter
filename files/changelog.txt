@@ -1,2 +1,6 @@
+Release v1.1  (2018-03-22)
+* Add "West" as an option.
+* Fix a bug that was causing the SPH to get unintentionally affected, too.
+
 Release v1.0  (2018-03-22)
 * Initial release.

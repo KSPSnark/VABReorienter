@@ -10,12 +10,18 @@ namespace VABReorienter
     {
         private static readonly Quaternion ROTATION_NORTH = Quaternion.Euler(0, 0, 0);
         private static readonly Quaternion ROTATION_EAST = Quaternion.Euler(0, 90, 0);
+        private static readonly Quaternion ROTATION_WEST = Quaternion.Euler(0, -90, 0);
 
         /// <summary>
         /// Allows choosing the default orientation of a new ship in the VAB.
         /// </summary>
         public enum VABOrientation
         {
+            /// <summary>
+            /// Ship faces west. May be useful to folks who like to pitch *up* to
+            /// head east, e.g. shuttle designs.
+            /// </summary>
+            West,
             /// <summary>
             /// Ship faces north.  This is the default in the stock game.
             /// </summary>
@@ -60,6 +66,8 @@ namespace VABReorienter
                         return ROTATION_NORTH;
                     case VABOrientation.East:
                         return ROTATION_EAST;
+                    case VABOrientation.West:
+                        return ROTATION_WEST;
                     default:
                         // Should never happen, it means I've got a bug in this file ;-)
                         Debug.LogError("[" + Reorienter.MOD_NAME + "] unknown orientation " + Instance.DefaultVABOrientation);
