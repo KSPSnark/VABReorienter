@@ -1,3 +1,6 @@
+Release v1.2  (2019-10-16)
+* Update for KSP 1.8 compatibility.
+
 Release v1.1  (2018-03-22)
 * Add "West" as an option.
 * Fix a bug that was causing the SPH to get unintentionally affected, too.
